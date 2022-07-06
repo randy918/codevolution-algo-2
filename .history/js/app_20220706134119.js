@@ -5,8 +5,8 @@
 const fibonacci = function (n) {
 
     let sum = [0, 1];
-    for (let i = 2; i < n; i++) {
-      sum.push(sum[i - 2] + sum[i - 1]);
+    for (let i = 2; i = n; i++) {
+        sum.push(sum[i - 2] + sum[i - 1]);
     };
     return sum;
 

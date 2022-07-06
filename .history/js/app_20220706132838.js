@@ -2,19 +2,13 @@
 
 //!  70622.1102         FUNCTIONS
 
-const fibonacci = function (n) {
-
-    let sum = [0, 1];
-    for (let i = 2; i < n; i++) {
-      sum.push(sum[i - 2] + sum[i - 1]);
-    };
-    return sum;
-
+const fi = function (n) {
 
 };
 
 const main = function () {
-  c(fibonacci(7));
+  summation(10);
+  c(summation(10));
 };
 
 const init = function () {

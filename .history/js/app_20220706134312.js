@@ -14,7 +14,7 @@ const fibonacci = function (n) {
 };
 
 const main = function () {
-  c(fibonacci(7));
+  c(fibonacci(2));
 };
 
 const init = function () {
