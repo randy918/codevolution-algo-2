@@ -18,17 +18,10 @@ const factorial = function (n) {
   return total;
 };
 
-const prime = function (n) {
-  let isPrime = 1;
-  for (let i = 2; i <= n; i++) {
-    if n % i  
-
-  return isPrime;
-};
-};
+const prim = 
 
 const main = function () {
-    c(prime(6));
+  c(factorial(1));
 };
 
 const init = function () {

@@ -19,16 +19,15 @@ const factorial = function (n) {
 };
 
 const prime = function (n) {
-  let isPrime = 1;
+  let is = 1;
+
   for (let i = 2; i <= n; i++) {
-    if n % i  
 
   return isPrime;
 };
-};
 
 const main = function () {
-    c(prime(6));
+    c(prime(5));
 };
 
 const init = function () {
