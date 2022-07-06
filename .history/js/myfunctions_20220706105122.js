@@ -32,9 +32,9 @@ function a(toAlert) {
   alert(toAlert);
 }
 
-function c(toConsole) {
-  console.log(toConsole);
-}
+// function c(toConsole) {
+//   console.log(toConsole);
+// }
 function cw(toConsole) {
   console.warn(toConsole);
 }
@@ -48,16 +48,7 @@ function cr(toConsole) {
     "color: red",
   ].join(";");
   console.log(`%c` + toConsole, styles);
-};
-
-function cl(toConsole) {
-  var styles = [
-    // 'font-size: 30px',
-    "font-size: 30px",
-  ].join(";");
-  console.log(`%c` + toConsole, styles);
 }
-
 
 function r(min, max) {
   // 2.0, accepts single value for 1-x

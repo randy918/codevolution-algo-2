@@ -4,8 +4,6 @@
 
 //!  70622.1102         FUNCTIONS
 
-
-
 window.onload = function () {
   main();
 };
@@ -17,13 +15,10 @@ const init = function () {
 
 const main = function () {
   init();
-  summation(10);
 };
 
-const summation = function (n) {
+const summation = function () {
 
-let sum = 0;
-
-
+let sum
 
 }

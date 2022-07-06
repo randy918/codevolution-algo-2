@@ -6,6 +6,7 @@
 
 
 
+
 window.onload = function () {
   main();
 };
@@ -23,7 +24,7 @@ const main = function () {
 const summation = function (n) {
 
 let sum = 0;
-
+c(n);
 
 
 }

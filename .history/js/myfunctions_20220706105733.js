@@ -53,7 +53,7 @@ function cr(toConsole) {
 function cl(toConsole) {
   var styles = [
     // 'font-size: 30px',
-    "font-size: 30px",
+    "color: red",
   ].join(";");
   console.log(`%c` + toConsole, styles);
 }

@@ -1,3 +1,7 @@
+//! . 121921.1036       git testing statement
+//! . 121921.1036       git testing statement
+//! . 121921.1036       git testing statement
+
 //todo   function a(toAlert)
 //todo   function c(toConsole)
 //todo   function cr(toConsole)
@@ -32,9 +36,9 @@ function a(toAlert) {
   alert(toAlert);
 }
 
-function c(toConsole) {
-  console.log(toConsole);
-}
+// function c(toConsole) {
+//   console.log(toConsole);
+// }
 function cw(toConsole) {
   console.warn(toConsole);
 }
@@ -48,16 +52,7 @@ function cr(toConsole) {
     "color: red",
   ].join(";");
   console.log(`%c` + toConsole, styles);
-};
-
-function cl(toConsole) {
-  var styles = [
-    // 'font-size: 30px',
-    "font-size: 30px",
-  ].join(";");
-  console.log(`%c` + toConsole, styles);
 }
-
 
 function r(min, max) {
   // 2.0, accepts single value for 1-x
@@ -110,7 +105,7 @@ function getMinute() {
 
 function getMinute00() {
   const today = new Date();
-  let codeMinute = today.getMinutes();
+  const codeMinute = today.getMinutes();
   if (codeMinute < 10) {
     codeMinute = "0" + codeMinute;
   }
@@ -119,21 +114,11 @@ function getMinute00() {
 
 function getHour() {
   const today = new Date();
-  let codeHour = today.getHours();
+  const codeHour = today.getHours();
   if (codeHour > 12) {
     codeHour = codeHour - 12;
   }
   return codeHour;
-}
-
-function getAmPm() {
-  let amPm = "am";
-  const today = new Date();
-  let codeHour = today.getHours();
-  if (codeHour > 12) {
-    amPm = "pm";
-  }
-  return amPm;
 }
 
 function getHour00() {
@@ -163,12 +148,6 @@ function get24Hour00() {
   return codeHour;
 }
 
-function getDayVerbal() {
-  const today = new Date();
-  const codeDay = today.getDay() + 1;
-  return theDay[codeDay];
-}
-
 function getDay00() {
   const today = new Date();
   const codeDay = today.getDate();
@@ -182,12 +161,6 @@ function getDay() {
   const today = new Date();
   const codeDay = today.getDate();
   return codeDay;
-}
-
-function getMonthVerbal() {
-  const today = new Date();
-  const codeMonth = today.getMonth() + 1;
-  return theMonth[codeMonth];
 }
 
 function getMonth00() {
@@ -226,6 +199,7 @@ function t() {
   // c(eventTimestamp);
   return eventTimestamp;
 }
+
 //    !  72419.1659 DOM MANIPULATION
 //!
 //!  placeText   element name, and text to put there--runs loosely?
@@ -334,17 +308,3 @@ var theMonthMin = new Array(
   "Nov.",
   "Dec."
 );
-
-function showDateTimeFormat() {
-  const today = new Date();
-  const formattedDate = new Intl.DateTimeFormat("en-US").format(today);
-  const consoleFunctioningMessage = `
-Console functioning: ${getDayVerbal()}, ${getMonthVerbal()} ${getDay()} at ${getHour()}:${getMinute00()}${getAmPm()}
-  `;
-  return consoleFunctioningMessage;
-}
-showDateTimeFormat();
-
-console.log(`%c${showDateTimeFormat()}`, "font-size: 20px; color: gray");
-
-//console.log("%cThis is a default font style", "color: blue; font-size: 20px");

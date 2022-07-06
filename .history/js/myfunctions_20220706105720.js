@@ -48,12 +48,11 @@ function cr(toConsole) {
     "color: red",
   ].join(";");
   console.log(`%c` + toConsole, styles);
-};
-
-function cl(toConsole) {
+}
+function cr(toConsole) {
   var styles = [
     // 'font-size: 30px',
-    "font-size: 30px",
+    "color: red",
   ].join(";");
   console.log(`%c` + toConsole, styles);
 }

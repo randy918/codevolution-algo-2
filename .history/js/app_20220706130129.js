@@ -23,7 +23,7 @@ const main = function () {
 const summation = function (n) {
 
 let sum = 0;
-
+for
 
 
 }
